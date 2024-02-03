@@ -1,0 +1,62 @@
+create database Jimuel
+
+CREATE TABLE Guests_table (
+    GuestID INT PRIMARY KEY,
+	gender varchar(55),
+    Name VARCHAR(100),
+);
+CREATE TABLE Inviters_table (
+    InvitersID INT PRIMARY KEY,
+	gender varchar(55),
+    Name VARCHAR(100),
+);
+CREATE TABLE Events_table (
+    EventID INT PRIMARY KEY,
+    EventName VARCHAR(100),
+	Minister varchar(100),
+    District varchar(100)
+);
+CREATE TABLE Logbook (
+    LogbookID INT PRIMARY KEY,
+	Timein datetime,
+    EventID INT,
+    GuestID INT,
+	InvitersID INT,
+    FOREIGN KEY (EventID) REFERENCES Events_table(EventID),
+    FOREIGN KEY (GuestID) REFERENCES Guests_table(GuestID),
+	FOREIGN KEY (InvitersID) REFERENCES Inviters_table(InvitersID)
+);
+
+
+INSERT INTO Guests_table (GuestID, gender, Name)
+VALUES 
+    (1, 'Male', 'John Doe'),
+    (2, 'Female', 'Jane Smith'),
+    (3, 'Male', 'Michael Johnson'),
+    (4, 'Female', 'Emily Brown'),
+    (5, 'Male', 'David Wilson');
+
+-- Sample data for Inviters_table
+INSERT INTO Inviters_table (InvitersID, gender, Name)
+VALUES 
+    (1, 'Male', 'Peter Parker'),
+    (2, 'Female', 'Mary Watson'),
+    (3, 'Male', 'Tony Stark'),
+    (4, 'Female', 'Natasha Romanoff'),
+    (5, 'Male', 'Steve Rogers');
+
+-- Sample data for Events_table
+INSERT INTO Events_table (EventID, EventName, Minister, District)
+VALUES 
+    (1, 'EVMS', 'Minister Smith', 'Central District'),
+    (2, 'Doktrina', 'Minister John', 'North District'),
+    (3, 'Pagtitipon', 'Minister Johnson', 'South District')
+
+INSERT INTO Logbook (LogbookID, Timein, EventID, GuestID, InvitersID)
+VALUES 
+    (1, '2024-02-01 15:30:00', 1, 1, 2),
+    (2, '2024-01-28 18:45:00', 2, 3, 4),
+    (3, '2024-01-30 09:00:00', 3, 5, 1),
+    (4, '2024-01-29 20:00:00', 1, 2, 3),
+    (5, '2024-01-31 12:15:00', 2, 4, 5);
+
