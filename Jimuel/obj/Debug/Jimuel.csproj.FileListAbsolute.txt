@@ -1,0 +1,15 @@
+C:\Users\63912\source\repos\Jimuel\bin\Debug\Jimuel.exe.config
+C:\Users\63912\source\repos\Jimuel\bin\Debug\Jimuel.exe
+C:\Users\63912\source\repos\Jimuel\bin\Debug\Jimuel.pdb
+C:\Users\63912\source\repos\Jimuel\obj\Debug\Jimuel.csproj.AssemblyReference.cache
+C:\Users\63912\source\repos\Jimuel\obj\Debug\Jimuel.csproj.SuggestedBindingRedirects.cache
+C:\Users\63912\source\repos\Jimuel\obj\Debug\Jimuel.Form1.resources
+C:\Users\63912\source\repos\Jimuel\obj\Debug\Jimuel.Properties.Resources.resources
+C:\Users\63912\source\repos\Jimuel\obj\Debug\Jimuel.csproj.GenerateResource.cache
+C:\Users\63912\source\repos\Jimuel\obj\Debug\Jimuel.csproj.CoreCompileInputs.cache
+C:\Users\63912\source\repos\Jimuel\obj\Debug\Jimuel.exe
+C:\Users\63912\source\repos\Jimuel\obj\Debug\Jimuel.pdb
+C:\Users\63912\source\repos\Jimuel\obj\Debug\Jimuel.guest.resources
+C:\Users\63912\source\repos\Jimuel\obj\Debug\Jimuel.Form2.resources
+C:\Users\63912\source\repos\Jimuel\obj\Debug\Jimuel.logbook.resources
+C:\Users\63912\source\repos\Jimuel\obj\Debug\Jimuel.Form3.resources
